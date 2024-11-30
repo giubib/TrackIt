@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const Join = ({ children }) => {
+export default function Join ({ children }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -47,4 +47,4 @@ const Join = ({ children }) => {
   });
 };
 
-export default Join;
+

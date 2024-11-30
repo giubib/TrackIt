@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import MySVG from "../Components/Logo";
+import {MySVG} from "../Components/Logo";
 import Join from "../Components/Join";
 import { Oval } from "react-loader-spinner";
 
-const JoinPage = () => {
+export default function JoinPage  ()  {
   return (
     <Join>
       {({ name, setName, email, setEmail, password, setPassword, image, setImage, loading, handleSignUp }) => (
@@ -65,7 +65,7 @@ const JoinPage = () => {
   );
 };
 
-export default JoinPage;
+
 
 const Container = styled.div`
   width: 100%;

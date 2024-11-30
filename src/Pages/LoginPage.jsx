@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import MySVG from "../Components/Logo";
+import {MySVG  } from "../Components/Logo";
 import Login from "../Components/Login";
 import { Oval } from "react-loader-spinner";
 
-const LoginPage = () => {
+export default  function LoginPage () {
   return (
     <Login>
       {({ email, setEmail, password, setPassword, loading, handleLogin }) => (
@@ -51,7 +51,7 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+
 
 const Container = styled.div`
   width: 100%;

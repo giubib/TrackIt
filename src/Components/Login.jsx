@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "../Contexts/UserContext";
 
-const Login = ({ children }) => {
+export default function Login ({ children })  {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -19,7 +19,7 @@ const Login = ({ children }) => {
       .then((response) => {
         const { token, ...userData } = response.data;
         loginUser({ ...userData, token });
-        navigate("/");
+        navigate("/hoje");
       })
       .catch(() => {
         alert("Erro ao fazer login. Verifique suas credenciais.");
@@ -37,4 +37,4 @@ const Login = ({ children }) => {
   });
 };
 
-export default Login;
+

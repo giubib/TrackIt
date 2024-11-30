@@ -1,4 +1,4 @@
-const MySVG = () => (
+export const MySVG = () => (
   <svg width="182" height="179" viewBox="0 0 182 179" fill="none" xmlns="http://www.w3.org/2000/svg">
     <ellipse cx="96.4671" cy="84.3413" rx="71.1377" ry="7.81437" fill="#E6E7E8" />
     <path d="M51.1975 19.4012V34.7605L69.2514 42.0359V19.4012H51.1975Z" fill="#8FC549" />
@@ -15,4 +15,4 @@ const MySVG = () => (
   </svg>
 );
 
-export default MySVG;
+ 
